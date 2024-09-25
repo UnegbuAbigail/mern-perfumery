@@ -46,9 +46,6 @@ const Login = () => {
               Sign in
             </Button>
             <img src={frame} alt='Divider' />
-            <Button className='btn-2 w-100 mt-2' variant='primary' type='submit'>
-              Submit
-            </Button>
           </Form>
         </div>
       </main>
