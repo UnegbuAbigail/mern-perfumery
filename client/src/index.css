@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@font-face {
+  font-family: newrial gotesk;
+  src: url("./assets/fonts/Fontspring-DEMO-neurialgrotesk-regular.otf");
+}
+
+:root {
+  --ff-sansita: "Sansita", sans-serif;
+  --purple: #8d34ff;
+  --off-white: #f5f5f5;
+  --login-bgr: rgba(230, 210, 255, 1);
+  --ff-outfit: "Outfit", sana-serif;
+}
+
+/* Nav */
+nav h2 {
+  font-family: var(--ff-sansita);
+  font-weight: 700;
+  font-size: 28.33px;
+}
+
+nav h1{
+  font-family: var(--ff-outfit);
+  font-weight: 500;
+  font-size: 28.33px;
+}
+
+.login-btn {
+  background-color: var(--login-bgr);
+  color: var(--purple);
+  border-radius: 8px;
+  border: none;
+  height: 61px;
+  width: 140px;
+  font-family: newrial gotesk;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.sign-up-btn {
+  background-color: var(--purple);
+  color: var(--off-white);
+  border-radius: 8px;
+  border: none;
+  height: 61px;
+  width: 140px;
+  font-family: newrial gotesk;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.sign-up-link {
+  color: var(--off-white);
+}
+
+.login-link {
+  color: var(--purple);
+}
+.log-out h4{
+  font-family: var(--ff-outfit);
+  font-size: 22px;
+  font-weight: 400;
+  color: red;
+}
+
+/* auth */
+.sign-in-container, .sign-up-container{
+  background-image: url("./assets/bakground-img.svg");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  min-height: 100vh;
+}
+
+@media(max-width:765px){
+  .sign-in-container, .sign-up-container{
+      background-image: none;
+  }
+}

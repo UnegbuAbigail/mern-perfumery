@@ -1,0 +1,24 @@
+.main-container {
+    background-image: url(../assets/background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  
+  @font-face {
+    font-family: neural-gotesk;
+    src: url(./fonts/Demo_Fonts/Fontspring-DEMO-neurialgrotesk-regular.otf);
+    src: url(../fonts/Demo_Fonts/Fontspring-DEMO-neurialgrotesk-bold.otf);
+  }
+  
+  .form-container {
+    background: white;
+    width: 100%;
+    max-width: 642px;
+    padding: 3rem 5rem;
+    border-radius: 15px;
+  }
+  
+  .btn-2 {
+    height: 64px;
+  }
