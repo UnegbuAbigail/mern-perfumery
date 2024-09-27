@@ -1,64 +1,107 @@
 .main-container {
-    background-image: url(../assets/bakground-img.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    height: 100%;
-    background-position: center;
-  }
-  
-  @font-face {
-    font-family: neural-gotesk;
-    src: url(./fonts/Demo_Fonts/Fontspring-DEMO-neurialgrotesk-regular.otf);
-    src: url(../fonts/Demo_Fonts/Fontspring-DEMO-neurialgrotesk-bold.otf);
-  }
-  
-  .form-container {
+  background-image: url(../assets/bakground-img.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 100%;
+  background-position: center;
+}
+
+@font-face {
+  font-family: neural-gotesk;
+  src: url(./fonts/Demo_Fonts/Fontspring-DEMO-neurialgrotesk-regular.otf);
+  src: url(../fonts/Demo_Fonts/Fontspring-DEMO-neurialgrotesk-bold.otf);
+}
+
+.form-container {
+  background: white;
+  width: 100%;
+  max-width: 642px;
+  padding: 3rem 5rem;
+  border-radius: 15px;
+  margin: 4rem;
+}
+
+.btn-2 {
+  height: 64px;
+}
+
+.group {
+  font-family: neural-gotesk;
+  font-weight: 400;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn-1 {
+  height: 50px;
+  font-weight: 300;
+  background-color: #8d34ff;
+  color: white;
+  font-family: neural-gotesk;
+  border: none;
+  border-radius: 15px;
+}
+
+.divider {
+  margin-left: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider p {
+  display: flex;
+}
+
+.divider p:before,
+.divider p:after {
+  color: white;
+  content: "";
+  flex: 1;
+  border-bottom: groove 2px;
+  margin: auto 0.2em;
+  box-shadow: 0 -1px;
+}
+
+.btn-2 {
+  height: 50px;
+  background-color: white;
+  font-weight: 600;
+  color: #292929;
+  font-family: neural-gotesk;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: #8d34ff;
+}
+h4 {
+  font-family: neural-gotesk;
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
+@media (max-width: 465px) {
+  .main-container {
+    height: 100vh;
     background: white;
+    margin: 0;
+  }
+  .form-container{
     width: 100%;
-    max-width: 642px;
-    padding: 3rem 5rem;
-    border-radius: 15px;
-    margin: 4rem;
+    max-width: 342px;
+    padding: 1rem 1rem;
   }
-  
-  .btn-2 {
-    height: 64px;
-  }
-
-  .group{
-    font-family: neural-gotesk;
-    font-weight: 400;
-    color: red;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  .btn-1{
-    height: 50px;
-    font-weight: 300;
-    background-color: #8d34ff;
-    color: white;
-    font-family: neural-gotesk;
-    border: none;
-    border-radius: 15px;
-  }
-
-  .divider{
-    margin-left: 1rem;
-    align-items: center;
-    justify-content: center;
-
-  }
-
   .divider p{
-    display: flex;
-
+    font-size: 1.5em;
   }
-
   .divider p:before, .divider p:after{
-    color: white;
-    content: '';
-    flex: 1;
-    border-bottom: groove 2px;
-    margin: auto;
+    flex: none;
+    width: 95px;
+    margin: 1rem 0.5em;
+    
   }
+}

@@ -46,7 +46,7 @@ const Login = () => {
               <p className='group'>Forgot Password</p>
             </Form.Group>
             <button className='btn-1 w-100 mb-2' variant='primary' type='submit '>
-              Sign in
+              Log in
             </button>
            <div className='divider'>
             <p>
@@ -81,9 +81,9 @@ const Login = () => {
               </svg>
               Continue with Google
             </button>
-            <Button className='btn-2 w-100 mt-2' variant='primary' type='submit'>
-              Submit
-            </Button>
+           <h4 className='text-center'>
+            Already have an account? <Link className='link' to='/auth/SignUp'>Sign Up</Link>
+           </h4>
           </Form>
         </div>
       </main>
