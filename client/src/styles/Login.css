@@ -1,8 +1,10 @@
 .main-container {
-    background-image: url(../assets/background.svg);
+    background-image: url(../assets/bakground-img.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+    background-position: center;
   }
   
   @font-face {
@@ -17,8 +19,46 @@
     max-width: 642px;
     padding: 3rem 5rem;
     border-radius: 15px;
+    margin: 4rem;
   }
   
   .btn-2 {
     height: 64px;
+  }
+
+  .group{
+    font-family: neural-gotesk;
+    font-weight: 400;
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .btn-1{
+    height: 50px;
+    font-weight: 300;
+    background-color: #8d34ff;
+    color: white;
+    font-family: neural-gotesk;
+    border: none;
+    border-radius: 15px;
+  }
+
+  .divider{
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .divider p{
+    display: flex;
+
+  }
+
+  .divider p:before, .divider p:after{
+    color: white;
+    content: '';
+    flex: 1;
+    border-bottom: groove 2px;
+    margin: auto;
   }
