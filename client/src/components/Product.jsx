@@ -1,23 +1,41 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import ratingImg from "../assets/star.svg";
+import ratingImg from "../assets/star.svg"
 import products from "../product.json";
 import CartContext from "../context/CartContext";
 
 const Product = () => {
-  const {handleAddToCart,cart} = useContext (CartContext)
-  const isItemInCart = (itemId) => cart.some
-  ((product)=>product.id === itemId)
+  const[data,setData] = useState([])
+  const getData = async()=>{
+    try {
+      const req = await fetch("http://localhost:3000/api/product/products");
+      const res = await req.json();
+      console.log(res.product);
+      setData(res.product);
+      setIsLoading(false);
+    } catch (error) {
+      console.log(error.message);
+      
+    }
+  }
+
+  useEffect(() => {
+ getData()
+  },[])
+  
+
+  const {handleAddToCart,cart} = useContext(CartContext)
+  const isItemInCart = (itemId)=> cart.some((product)=>product._id === itemId)
   return (
     <>
       <main className="d-flex flex-wrap justify-content-between gap-4 pt-2">
-        {products.map((product) => {
-          const { image, id, title, price, discountPrice, rateCount, rating } =
+        {data.map((product) => {
+          const { image, _id, title, price, discountPrice, rateCount, rating } =
             product;
 
           return (
-            <Card className="card-container" key={id}>
+            <Card className="card-container" key={_id}>
               <Card.Img variant="" className="w-100 card-image" src={image} />
               <Card.Body>
                 <Card.Title className="card-title">{title}</Card.Title>
@@ -40,8 +58,8 @@ const Product = () => {
                     #{discountPrice}
                   </span>
                 </Card.Text>
-                <button disabled={isItemInCart(id)} onClick={()=>handleAddToCart(product)}
-                className="add-to-cart-btn w-100">{isItemInCart(id) ? "Added to Cart" : "Add to Cart"}</button>
+                <button disabled={isItemInCart(_id)} onClick={()=>handleAddToCart(product)}
+                className="add-to-cart-btn w-100">{isItemInCart(_id) ? "Added to Cart" : "Add to Cart"}</button>
               </Card.Body>
             </Card>
           );

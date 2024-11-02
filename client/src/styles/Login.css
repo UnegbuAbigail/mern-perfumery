@@ -73,6 +73,15 @@
   border-radius: 15px;
 }
 
+.pswrd-div{
+  position: relative;
+}
+.eye{
+  position: absolute;
+  left: 28rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
 .link {
   text-decoration: none;
   color: #8d34ff;
@@ -82,6 +91,17 @@ h4 {
   font-size: 15px;
   font-weight: 400;
   padding-top: 2rem;
+}
+
+/* checkbox */
+input[type="checkbox"] {
+  cursor: pointer;
+  box-shadow: none;
+}
+input[type="checkbox"]:checked{
+  background-color: var(--purple);
+  border: none;
+  box-shadow: none;
 }
 
 @media (max-width: 465px) {

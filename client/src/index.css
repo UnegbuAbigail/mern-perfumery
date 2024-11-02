@@ -114,12 +114,20 @@ font-size: 16px;
   font-weight: 500;
  
 }
+
+.add-to-cart-btn:disabled, .add-to-cart-btn.disabled {
+  /* opacity: 0.65; */
+  pointer-events: none;
+  background-color: rgba(210, 210, 210, 1);
+}
+
+/* cart */
 .cart {
   width: 100%;
 }
 
 .cart-1 {
-  width: 25%;
+  width: 30%;
 }
 .cart-2 {
   width: 75%;
@@ -153,13 +161,16 @@ font-size: 16px;
 .subtract-cart {
   width: 18.61px;
   height: 18.61px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
+  font-size: 12.1px;
+  font-weight: 400;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: justify; */
   margin: 0;
   padding: 0;
-  line-height: 30px;
+  /* line-height: 30px; */
+  border-radius: 2.79px;
   border: none;
   color: white;
 }
@@ -176,6 +187,8 @@ font-size: 16px;
   font-family: var(--ff-poppins);
   font-weight: 600;
   font-size: 16px;
+  width: 54px;
+  height: 19px;
 }
 
 .cart-title {
@@ -188,8 +201,13 @@ font-size: 16px;
   font-family: var(--ff-poppins);
   font-weight: 400;
   font-size: 12.1px;
+  width: 18.61px;
+  height: 18.61px;
+  text-align: center;
+  margin: 9.3px;
 }
 
+/* confirm order */
 .checkout-container {
   display: flex;
   flex-direction: column;
@@ -222,11 +240,11 @@ font-size: 16px;
   color: #000000;
 }
 
-.checkout-button {
+.checkout-btn {
   height: 44px;
   border-radius: 8px;
   border: none;
-  background-color: #8d34ff;
+  background-color: var(--purple);
   color: white;
   font-family: neural-gotesk;
   font-weight: 500;
@@ -254,70 +272,119 @@ font-size: 16px;
   color: #191b1d;
 }
 
-/* modal */
-.custom-modal-width .modal-dialog {
+/* confirm-order modal */
+.custom-modal-width {
   max-width: 100%;
-  width: 700px;
-}
-.gateway-button {
-  border: none;
-  border-radius: 15px;
-  background-color: #8d34ff;
-  color: white;
-  height: 60px;
+  padding-top: 22%;
+  padding-left: 44px;
+  font-family: newrial-gotesk;
 }
 
-.gateway-title {
-  font-family: neural-gotesk;
+.confirmation{
+  width: 82px;
+  height: 82px;
+}
+
+.confirmation-confirmed{
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.confirmation-title{
+  font-weight: 500;
+  font-size: 15.97px;
+  color: rgba(103, 103, 103, 1);
+  ;
+}
+
+.gateway-container{
+  width: 423px;
+  height: 76.76px;
+}
+
+.gateway-title{
   font-weight: 500;
   font-size: 14.7px;
 }
 
-.gateway-quantity {
-  color: #8d34ff;
-  font-family: neural-gotesk;
+.gateway-image{
+  width: 77.58px;
+  height: 76.76px;
+  border-radius: 5.72px;
+}
+
+.gateway-quantity{
   font-weight: 500;
+  font-size: 14.7px;
+  font-family: var(--ff-poppins);
+  color: var(--purple);
 }
 
-.gateway-price {
-  color: #5d5d5d;
-  font-family: neural-gotesk;
+.gateway-price{
+  font-weight: 500;
+  font-size: 14.7px;
 }
 
-.gateway-amount {
-  font-family: neural-gotesk;
+.gateway-amount{
   font-weight: 700;
+  font-family: var(--ff-poppins);
   font-size: 16.33px;
-  color: #002011;
+  color: rgba(0, 32, 17, 1);
+  ;
 }
 
-.gateway-total {
-  font-family: neural-gotesk;
+.gateway-total{
+  font-weight: 500;
+  font-size: 16.33px;
+  color: rgba(117, 117, 117, 1);
+  ;
+}
+
+.gateway-total-price{
+  /* width: 76px;
+  height: 25px; */
+  font-family: var(--ff-poppins);
   font-weight: 700;
   font-size: 21.23px;
-  color: #002011;
+  color: rgba(0, 32, 17, 1);
 }
 
+.gateway-button{
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  padding: 7px 10px;
+  background-color: var(--purple);
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+}
 @media(max-width:765px){
   .sign-in-container, .sign-up-container{
       background-image: none;
   }
-}
-
-/* cards */
-.card-container{
-  width: 98%;
-}
-
-.card-image{
-  height: 335.55px;
-  width: 335.55px;
-}
-
-.card-title{
+  /* cards */
+  .card-container{
+    width: 98%;
+  }
   
-  font-size: 20px;
+  .card-image{
+    height: 335.55px;
+    width: 335.55px;
+  }
+  
+  .card-title{
+    
+    font-size: 20px;
+  }
+  /* modal */
+  .custom-modal-width {
+    padding-top: 40%;
+    padding-left: 0;
+    padding-bottom: 25%;
+  }
 }
+
 
 @media (min-width:768px) and (max-width: 1023px) {
   .card-container{
@@ -330,6 +397,9 @@ font-size: 16px;
   height: 335.55px;
   width: 335.55px;
 }
-
+/* modal */
+.custom-modal-width {
+  padding-bottom: 22%;
+}
 }
 

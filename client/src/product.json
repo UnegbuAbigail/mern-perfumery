@@ -1,58 +1,58 @@
 [
   {
-    "id": 1,
+    
     "image": "https://res.cloudinary.com/dmgmoglpx/image/upload/v1727524001/Mern%20perfumery/xfbsgynk1kpu620jepei.png",
     "title": "Ralph Lauren Perfume",
     "price": "3000",
     "rating": "5.0",
     "rateCount": "24",
-    "discountprice": "4000"
+    "discountPrice": "4000"
 },
 
   {
-    "id": 2,
+  
     "image": "https://res.cloudinary.com/dmgmoglpx/image/upload/v1727524001/Mern%20perfumery/ijnlpkwmvxg1wqup56jf.png",
     "title": "Oud Touch Frank Oliver",
     "price": "3000",
     "rating": "5.0",
     "rateCount": "24",
-    "discountprice": "4000"
+    "discountPrice": "4000"
 },
 
   {
-    "id": 3,
+    
     "image": "https://res.cloudinary.com/dmgmoglpx/image/upload/v1727524001/Mern%20perfumery/dxisijgkwfyqbtrpjlag.png",
     "title": "Oud Touch Frank Oliver",
     "price": "3000",
     "rating": "5.0",
     "rateCount": "24",
-    "discountprice": "4000"
+    "discountPrice": "4000"
 },
 {
-    "id": 4,
+    
     "image": "https://res.cloudinary.com/dmgmoglpx/image/upload/v1727524001/Mern%20perfumery/jbfwzlp3fj55tbcnakhe.png",
-    "title": "",
+    "title": "Timeless Bouquet",
     "rating": "5.0",
     "rateCount": "24",
     "price": "3000",
-    "discountprice": "4000"
+    "discountPrice": "4000"
   },
   {
-    "id": 5,
+   
     "image": "https://res.cloudinary.com/dmgmoglpx/image/upload/v1727524001/Mern%20perfumery/lgwubodkpaqfa8vjcoqi.png",
     "title": "Aventos Blue for Him",
     "rating": "5.0",
     "rateCount": "24",
     "price": "3000",
-    "discountprice": "4000"
+    "discountPrice": "4000"
   },
   {
-    "id": 6,
+   
     "image": "https://res.cloudinary.com/dmgmoglpx/image/upload/v1727524001/Mern%20perfumery/tyowvmhnhelndjsnlq1f.png",
     "title": "Asad Mousouff",
     "rating": "5.0",
     "rateCount": "24",
     "price": "3000",
-    "discountprice": "4000"
+    "discountPrice": "4000"
   }
 ]
