@@ -36,7 +36,7 @@ const SignUp = () => {
   const onSubmit = async (data) => {
     setIsClicked(true)
 try {
-  const req = await fetch("http://localhost:3000/api/auth/signup",
+  const req = await fetch("https://mern-perfumery-68cb.onrender.com/api/auth/signup",
     {method:"POST",
     headers:{
       "Content-Type":"application/json"

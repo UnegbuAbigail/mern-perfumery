@@ -15,7 +15,7 @@ export const CartProvider =({children}) => {
     }
     const verified = async()=>{
       try {
-        const req = await fetch("http://localhost:3000/api/auth/verify",{
+        const req = await fetch("https://mern-perfumery-68cb.onrender.com/api/auth/verify",{
           headers:{
             Authorization: `Bearer ${token}`
           }

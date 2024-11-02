@@ -9,7 +9,7 @@ const Product = () => {
   const[data,setData] = useState([])
   const getData = async()=>{
     try {
-      const req = await fetch("http://localhost:3000/api/product/products");
+      const req = await fetch("https://mern-perfumery-68cb.onrender.com/api/product/products");
       const res = await req.json();
       console.log(res.product);
       setData(res.product);
