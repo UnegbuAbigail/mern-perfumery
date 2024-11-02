@@ -2,7 +2,7 @@ import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import frame from "../assets/Frame.svg";
-import navLogo from '../assetS/perfumery-logo.svg';
+import navLogo from '../assets/perfumery-logo.svg';
 import '../styles/Login.css';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
