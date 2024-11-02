@@ -11,6 +11,7 @@ export const CartProvider =({children}) => {
     function logout(){
       localStorage.removeItem("perf-token");
       localStorage.removeItem("fullname");
+      window.location.reload()
       setUser(null)
     }
     const verified = async()=>{
